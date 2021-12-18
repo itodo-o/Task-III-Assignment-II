@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend>
+                Personal Information
+            </legend>
+            <p>
+        <label for= "fname">First Name*:</label>
+        <input type="text" id= "fname" name="fname" placeholder="Your first name" required><br>
+
+        <label for= "lname">Last Name*:</label>
+        <input type="text" id="lname" name="lname" placeholder= "Your last name"required><br>
+
+        <label for="email">Email Address*:</label>
+        <input type="email" id="email" name="email" placeholder="Your email address"required><br>
+
+        <label for="p-input">Password Input*:</label>
+        <input type="password" id="p-input" name="p-input" required><br>
+
+        <label for= "rep-input">Repeat Password*:</label>
+        <input type="password" id="p-input" name="p-input" required><br>
+        </p>
+        </fieldset>
+
+        <fieldset>
+            <legend>
+                Profile Information
+            </legend>
+            <p>
+                <label for="g-level">Grade Level</label>
+                <input type="radio" id="fmen" name="g-level" value="fmen">
+                <label for = "fmen">Freshmen</label>
+                <input type="radio" id="smore" name="g-level" value="smore">
+                <label for= "smore">Sophomore</label>
+                <input type="radio" id="jun" name="g-level" value="jun">
+                <label for="jun">Junior</label>
+                <input type= "radio" id="sen" name="g-level" value="sen">
+                <label for="sen">Senior</label><br>
+            </p>
+            <p>
+                <label for= "genre">Favorite Genre of Music (You can select multiple hold command/control + shift and click)*: </label>
+
+                <select name="genre" id="genre" multiple required>
+                    <option value="Rock">Rock</option>
+                    <option value="Hip Hop">Hip Hop</option>
+                    <option value="EDM">EDM</option>
+                    <option value="Classical">Classical</option>
+                </select>
+            </p>
+
+            <p>
+                <label for= "WuTC">Favorite Member of Wu Tang Clan*: </label>
+
+                <select name="WuTC" id="WuTC" required>
+                    <option value="RzA">RzA</option>
+                    <option value="GzA">Gza</option>
+                    <option value="Ol' Dirty">Ol' Dirty</option>
+                    <option value="I-Deck">Inspectah Deck</option>
+                    <option value="Raekwon">Raekwon</option>
+                    <option value="U-God">U-God</option>
+                    <option value="G-Killah">Ghostface Killah</option>
+                    <option value="M-Man">Method Man</option>
+                </select>
+            </p>
+
+            <p>
+                <input type="checkbox" id="spam-emails" name="spam-emails"> <label for="spam-emails">Sign me up for spam emails, because I don't get enough!</label>
+            </p>
+
+        </fieldset>
+        <p>
+         Required 
+         <input type="submit" value="Submit this Form!" required>
+        </p>
+
+    </form>
+    
+</body>
+</html>
